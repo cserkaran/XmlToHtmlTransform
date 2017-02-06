@@ -11,7 +11,7 @@ namespace Subscriber
     {
         public void Notify(IList<XmlContent> xmlContents)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

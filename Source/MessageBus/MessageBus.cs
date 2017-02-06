@@ -19,7 +19,7 @@ namespace MessageBus
 
         public void Run()
         {
-             
+            _publisher.Start();
         }
     }
 }
