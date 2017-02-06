@@ -5,11 +5,15 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{E49414B5-72DD-4280-94D9-20F0EF0D2DC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{E3D04E2D-1FB9-45B6-A000-B2F832E6679D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Contracts\Infrastructure.csproj", "{E3D04E2D-1FB9-45B6-A000-B2F832E6679D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher", "Publisher\Publisher.csproj", "{07C85FCA-11D1-4A54-861A-EA0D98EC4B04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscriber", "Subscriber\Subscriber.csproj", "{3AF1105A-287E-4D45-8E77-C4B42A678F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBus", "MessageBus\MessageBus.csproj", "{35793986-25FD-4964-AADC-E7FA9D50843A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToHtmlTransform.Tests", "XmlTransform.Tests\XmlToHtmlTransform.Tests.csproj", "{94D182DB-3254-4967-B908-17D880256170}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{3AF1105A-287E-4D45-8E77-C4B42A678F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AF1105A-287E-4D45-8E77-C4B42A678F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AF1105A-287E-4D45-8E77-C4B42A678F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35793986-25FD-4964-AADC-E7FA9D50843A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35793986-25FD-4964-AADC-E7FA9D50843A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35793986-25FD-4964-AADC-E7FA9D50843A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35793986-25FD-4964-AADC-E7FA9D50843A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94D182DB-3254-4967-B908-17D880256170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94D182DB-3254-4967-B908-17D880256170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94D182DB-3254-4967-B908-17D880256170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94D182DB-3254-4967-B908-17D880256170}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

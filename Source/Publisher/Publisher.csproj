@@ -45,9 +45,9 @@
     <Compile Include="Publisher.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Contracts\Contracts.csproj">
+    <ProjectReference Include="..\Contracts\Infrastructure.csproj">
       <Project>{e3d04e2d-1fb9-45b6-a000-b2f832e6679d}</Project>
-      <Name>Contracts</Name>
+      <Name>Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
