@@ -5,6 +5,11 @@ using System.ComponentModel.Composition.Hosting;
 
 namespace Infrastructure.Extensibility
 {
+    /// <summary>
+    /// The application bootstrapper. Load the dependencies and component implementations via MEF.
+    /// It will satisfy the Import attributes with the implementations exported via Export attributes.
+    /// </summary>
+    /// <seealso cref="Prism.Mef.MefBootstrapper" />
     public sealed class AppBootStrapper : MefBootstrapper
     {
         /// <summary>

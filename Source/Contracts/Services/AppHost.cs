@@ -11,7 +11,13 @@ namespace Infrastructure.Services
     [PartCreationPolicy(CreationPolicy.Shared)]
     internal class AppHost : IAppHost
     {
+        /// <summary>
+        /// Gets the message queue.
+        /// </summary>
+        /// <value>
+        /// The <see cref="IMessageQueue"/>.
+        /// </value>
         [Import]
-        public IMessageQueue Bus { get; set;}
+        public IMessageQueue Queue { get; set;}
     }
 }

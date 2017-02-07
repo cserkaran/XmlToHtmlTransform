@@ -5,13 +5,28 @@ using System.IO;
 
 namespace Consumer
 {
+    /// <summary>
+    /// The consumer class which consumes the <see cref="XmlContent"/> messages on queue and 
+    /// transforms them.
+    /// </summary>
+    /// <seealso cref="Infrastructure.Contracts.IConsumer" />
     [Export(typeof(IConsumer))]
     [PartCreationPolicy(CreationPolicy.Shared)]
     public class Consumer : IConsumer
     {
+        /// <summary>
+        /// The output path
+        /// </summary>
         private string _outputPath = @"../Output";
-        string xslt;
 
+        /// <summary>
+        /// The XSLT transformation file content.
+        /// </summary>
+        private string xslt;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Consumer"/> class.
+        /// </summary>
         public Consumer()
         {
             if (Directory.Exists(_outputPath))
@@ -28,6 +43,10 @@ namespace Consumer
 
         }
 
+        /// <summary>
+        /// Consumes the specified content.
+        /// </summary>
+        /// <param name="content">The <see cref="XmlContent"/>.</param>
         public void Consume(XmlContent content)
         {
             var html = Utilities.Utils.TransformXMLToHTML(content.Content, xslt);

@@ -15,7 +15,7 @@ namespace XmlToHtmlTransform.Tests
             // test every component is composed.
             Assert.NotNull(AppContext.Instance);
             Assert.NotNull(AppContext.Instance.Host);
-            Assert.NotNull(AppContext.Instance.Host.Bus);
+            Assert.NotNull(AppContext.Instance.Host.Queue);
         }
     }
 }

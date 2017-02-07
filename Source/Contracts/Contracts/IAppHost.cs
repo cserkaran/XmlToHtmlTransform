@@ -1,8 +1,11 @@
 ﻿namespace Infrastructure.Contracts
 {
     /// <summary>
-    /// this is the interface of application host..
+    /// Gets the message queue.
     /// </summary>
+    /// <value>
+    /// The <see cref="IMessageQueue"/>.
+    /// </value>
     public interface IAppHost
     {
         /// <summary>
@@ -11,6 +14,6 @@
         /// <value>
         /// The bus.
         /// </value>
-        IMessageQueue Bus { get; }
+        IMessageQueue Queue { get; }
     }
 }

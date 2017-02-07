@@ -9,7 +9,7 @@ namespace XMLToHtmlTransform.Test
         {
             AppBootStrapper appBootStrapper = new AppBootStrapper();
             appBootStrapper.Run();
-            Infrastructure.Services.AppContext.Instance.Host.Bus.Run();
+            Infrastructure.Services.AppContext.Instance.Host.Queue.Run();
             Console.Read();
         }
     }

@@ -9,24 +9,27 @@ using System.Threading.Tasks;
 
 namespace Producer
 {
+    /// <summary>
+    /// The producer which read's thru the xml file's and places thier content
+    /// on the <see cref="IMessageQueue"/> for consumption by consumers.
+    /// </summary>
+    /// <seealso cref="Infrastructure.Contracts.IProducer" />
     [Export(typeof(IProducer))]
     [PartCreationPolicy(CreationPolicy.Shared)]
     public class Producer : IProducer
     {
-        private readonly CancellationTokenSource _cancelTokenSource = new CancellationTokenSource();
-
-        private  Task _publisherTask;
-
+        
+        /// <summary>
+        /// Occurs when [produced].
+        /// </summary>
         public event EventHandler<XmlContentEventArgs> Produced;
 
-        private void OnPublish(IList<XmlContent> xmlContents)
-        {
-            Produced?.Invoke(this, new XmlContentEventArgs(xmlContents));
-        }
-
+        /// <summary>
+        /// Produce the messages for queue.
+        /// </summary>
         public void Produce()
         {
-            _publisherTask = Task.Factory.StartNew(() =>
+            Task.Factory.StartNew(() =>
             {
                 var dirInfo = new DirectoryInfo(@"../Data/Computers");
                 foreach (var file in dirInfo.GetFiles())
@@ -37,12 +40,19 @@ namespace Producer
                     IList<XmlContent> contents = new List<XmlContent>();
                     contents.Add(content);
                     Console.WriteLine("Produce content from and place it on Queue for " + file.FullName);
-                    OnPublish(contents);
+                    OnProduced(contents);
                 }
-                //OnComplete();
             });
            
         }
 
+        /// <summary>
+        /// Called when content is produced.
+        /// </summary>
+        /// <param name="xmlContents">The XML contents.</param>
+        private void OnProduced(IList<XmlContent> xmlContents)
+        {
+            Produced?.Invoke(this, new XmlContentEventArgs(xmlContents));
+        }
     }
 }
