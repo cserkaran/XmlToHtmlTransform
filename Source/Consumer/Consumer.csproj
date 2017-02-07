@@ -7,8 +7,8 @@
     <ProjectGuid>{3AF1105A-287E-4D45-8E77-C4B42A678F7A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Subscriber</RootNamespace>
-    <AssemblyName>Subscriber</AssemblyName>
+    <RootNamespace>Consumer</RootNamespace>
+    <AssemblyName>Consumer</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

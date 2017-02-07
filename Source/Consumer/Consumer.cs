@@ -3,16 +3,16 @@ using System;
 using System.ComponentModel.Composition;
 using System.IO;
 
-namespace Subscriber
+namespace Consumer
 {
     [Export(typeof(IConsumer))]
     [PartCreationPolicy(CreationPolicy.Shared)]
-    public class Subscriber : IConsumer
+    public class Consumer : IConsumer
     {
         private string _outputPath = @"../Output";
         string xslt;
 
-        public Subscriber()
+        public Consumer()
         {
             if (Directory.Exists(_outputPath))
             {

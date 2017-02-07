@@ -7,8 +7,8 @@
     <ProjectGuid>{35793986-25FD-4964-AADC-E7FA9D50843A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MessageBus</RootNamespace>
-    <AssemblyName>MessageBus</AssemblyName>
+    <RootNamespace>MessageQueue</RootNamespace>
+    <AssemblyName>MessageQueue</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

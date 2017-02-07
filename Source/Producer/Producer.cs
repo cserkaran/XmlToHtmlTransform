@@ -7,7 +7,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Publisher
+namespace Producer
 {
     [Export(typeof(IProducer))]
     [PartCreationPolicy(CreationPolicy.Shared)]

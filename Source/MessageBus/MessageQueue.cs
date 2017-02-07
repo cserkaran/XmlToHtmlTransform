@@ -5,7 +5,7 @@ using System;
 using System.Collections.Concurrent;
 using Infrastructure;
 
-namespace MessageBus
+namespace MessageQueue
 {
     [Export(typeof(IMessageQueue))]
     [PartCreationPolicy(CreationPolicy.Shared)]

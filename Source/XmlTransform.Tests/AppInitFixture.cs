@@ -1,6 +1,5 @@
 ﻿using Infrastructure.Extensibility;
 using Infrastructure.Services;
-using System.Threading;
 using Xunit;
 
 namespace XmlToHtmlTransform.Tests
@@ -13,6 +12,7 @@ namespace XmlToHtmlTransform.Tests
             AppBootStrapper appBootStrapper = new AppBootStrapper();
             appBootStrapper.Run();
 
+            // test every component is composed.
             Assert.NotNull(AppContext.Instance);
             Assert.NotNull(AppContext.Instance.Host);
             Assert.NotNull(AppContext.Instance.Host.Bus);
