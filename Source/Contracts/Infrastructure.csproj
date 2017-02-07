@@ -63,9 +63,10 @@
   <ItemGroup>
     <Compile Include="Contracts\IAppHost.cs" />
     <Compile Include="Contracts\IMessageBus.cs" />
-    <Compile Include="Contracts\ISubscriber.cs" />
-    <Compile Include="Contracts\IPublisher.cs" />
+    <Compile Include="Contracts\IConsumer.cs" />
+    <Compile Include="Contracts\IProducer.cs" />
     <Compile Include="Extensibility\AppBootStrapper.cs" />
+    <Compile Include="ProducerConsumer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Contracts\XmlContent.cs" />
     <Compile Include="CustomEventArgs\XmlContentEventArgs.cs" />

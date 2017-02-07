@@ -76,6 +76,10 @@ artifacts/
 # Chutzpah Test files
 _Chutzpah*
 
+# OutputTest files
+[Oo]utput
+[Oo]utput[Ss]
+
 # Visual C++ cache files
 ipch/
 *.aps

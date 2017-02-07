@@ -1,6 +1,6 @@
 ﻿namespace Infrastructure.Contracts
 {
-    public interface IMessageBus
+    public interface IMessageQueue
     {
         void Run();
     }

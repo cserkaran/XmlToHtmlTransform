@@ -1,5 +1,6 @@
 ﻿using Infrastructure.Extensibility;
 using Infrastructure.Services;
+using System.Threading;
 using Xunit;
 
 namespace XmlToHtmlTransform.Tests
@@ -15,7 +16,6 @@ namespace XmlToHtmlTransform.Tests
             Assert.NotNull(AppContext.Instance);
             Assert.NotNull(AppContext.Instance.Host);
             Assert.NotNull(AppContext.Instance.Host.Bus);
-            AppContext.Instance.Host.Bus.Run();
         }
     }
 }

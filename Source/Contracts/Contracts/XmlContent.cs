@@ -2,9 +2,9 @@
 {
     public struct XmlContent
     {
-        string FileName { get; }
+        public string FileName { get; }
 
-        string Content { get; }
+        public string Content { get; }
 
         public XmlContent(string fileName,string content)
         {

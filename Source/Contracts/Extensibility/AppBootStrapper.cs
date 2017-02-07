@@ -15,7 +15,7 @@ namespace Infrastructure.Extensibility
         /// </remarks>
         protected override void ConfigureAggregateCatalog()
         {
-            var buildDirectoryCatalog = new DirectoryCatalog(@"..//Build");
+            var buildDirectoryCatalog = new DirectoryCatalog(@"../Build");
             AggregateCatalog.Catalogs.Add(buildDirectoryCatalog);
             base.ConfigureAggregateCatalog();
         }

@@ -12,6 +12,6 @@ namespace Infrastructure.Services
     internal class AppHost : IAppHost
     {
         [Import]
-        public IMessageBus Bus { get; set;}
+        public IMessageQueue Bus { get; set;}
     }
 }

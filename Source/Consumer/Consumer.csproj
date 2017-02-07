@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{35793986-25FD-4964-AADC-E7FA9D50843A}</ProjectGuid>
+    <ProjectGuid>{3AF1105A-287E-4D45-8E77-C4B42A678F7A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MessageBus</RootNamespace>
-    <AssemblyName>MessageBus</AssemblyName>
+    <RootNamespace>Subscriber</RootNamespace>
+    <AssemblyName>Subscriber</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,13 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MessageQueue.cs" />
+    <Compile Include="Consumer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Contracts\Infrastructure.csproj">
       <Project>{e3d04e2d-1fb9-45b6-a000-b2f832e6679d}</Project>
       <Name>Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{e49414b5-72dd-4280-94d9-20f0ef0d2dc9}</Project>
+      <Name>Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

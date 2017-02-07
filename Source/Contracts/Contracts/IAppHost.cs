@@ -11,6 +11,6 @@
         /// <value>
         /// The bus.
         /// </value>
-        IMessageBus Bus { get; }
+        IMessageQueue Bus { get; }
     }
 }
